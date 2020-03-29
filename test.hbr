@@ -1,0 +1,7 @@
+cmd:
+  {{name}}
+args:
+  {{#each args}}
+  - {{this~}}
+  {{/each}}
+ 
