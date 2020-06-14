@@ -6,7 +6,7 @@ A tool to make Kubenetes yaml file take Handlebar templates
 
 ```sh
 USAGE:
-    rukute [OPTIONS] <YAMLFILE>
+    rustkube [OPTIONS] <YAMLFILE>
 
 FLAGS:
     -h, --help       Prints help information

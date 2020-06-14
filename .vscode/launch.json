@@ -1,0 +1,36 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug executable 'rustkube'",
+      "cargo": {
+        "args": ["build", "--bin=rustkube", "--package=rustkube"],
+        "filter": {
+          "name": "rustkube",
+          "kind": "bin"
+        }
+      },
+      "args": ["-v '{\"env\": \"ENV\"}'", "-f vars.json", "test.yaml"],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug unit tests in executable 'rustkube'",
+      "cargo": {
+        "args": ["test", "--no-run", "--bin=rustkube", "--package=rustkube"],
+        "filter": {
+          "name": "rustkube",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}
