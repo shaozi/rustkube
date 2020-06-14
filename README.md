@@ -1,6 +1,6 @@
 # Rustkube
 
-A tool to make Kubenetes yaml file take Handlebar templates
+A tool that take json or yaml as input to populate handlebar file
 
 ## Usage
 
@@ -13,7 +13,8 @@ FLAGS:
     -V, --version    Prints version information
 
 OPTIONS:
-    -v, --variables <JSON>    Set JSON variables
+    -f, --var-file <FILENAME>    variables json or yaml file
+    -v, --variables <JSON>       JSON variables as a string
 
 ARGS:
     <YAMLFILE>    Sets the input yaml file to use
